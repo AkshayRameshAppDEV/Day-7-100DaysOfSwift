@@ -19,3 +19,20 @@ function { (name: String) in
   print ("Inside the caller Function \(name)") // Content inside the {...} is the closure wich takes string param ("I am String") and uses here in print statement.
 }
   ```
+### 2. Closure with return values
+  - func function((String) -> Int)
+  - (String) -> Int ===> takes closure param with string param and returns int
+
+### 3. Shorthand parameter 
+  - Inside close instead of declaring variable before `in`, 
+  we can access variable via $0, $1 etc..
+
+### 4. Closure can accept multiple params 
+  - (String, Double) -> Void
+  
+### 5. Closure can be returned in functions
+  - func function() -> () -> void
+  - () -> void is the closure which is returned
+
+### 6. Closure capturing value
+  - Any variable declared in function and used inside the closure, the variable value will be retained.
